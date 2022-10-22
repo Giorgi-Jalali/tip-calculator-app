@@ -46,6 +46,7 @@ function calculateTip() {
 
 function billInputFun() {
   billValue = parseFloat(billInput.value);
+  resetBtn.style.backgroundColor = '#26C2AE';
   calculateTip();
 }
 
@@ -67,6 +68,7 @@ function peopleNumFun() {
 function customInputFun() {
   tipValue = parseFloat(customInput.value / 100);
   tips.forEach((val) => val.classList.remove('active-tip'));
+  resetBtn.style.backgroundColor = '#26C2AE';
   calculateTip();
 }
 
